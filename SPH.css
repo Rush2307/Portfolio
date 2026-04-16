@@ -1,0 +1,430 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.navbar {
+  background-color: #0f172a;
+  color: azure;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.hnav {
+  color: white;
+  font-size: 30px;
+  margin-left: 5%;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: stretch;
+}
+
+.navbar ul li {
+  display: flex;
+  font-size: 25;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+  height: 80px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  background-color: #7c3aed;
+  transform: scale(1.08);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.about {
+  background-image: url(bg2.png);
+  max-height: 470px;
+  padding-left: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 0.3;
+}
+
+.about h2 {
+  color: white;
+  font-size: 50px;
+}
+.about h1 {
+  color: #7c3aed;
+  font-size: 100px;
+}
+.about h3 {
+  font-size: 50px;
+  color: white;
+}
+
+.about p {
+  font-size: 35;
+  color: white;
+}
+
+.work {
+  color: white;
+  background-color: #7c3aed;
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.work:hover {
+  transform: scale(1.5);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+.con {
+  color: black;
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 50px;
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.con:hover {
+  transform: scale(1.5);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+.my {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  border-radius: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.my-img img {
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+  border-radius: 15px;
+  display: block;
+}
+
+.content {
+  flex: 1;
+  padding-left: 100;
+}
+
+.sce-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 15px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.content h2 {
+  font-size: 50px;
+  margin: 0;
+}
+
+.content p {
+  font-size: 25px;
+}
+
+.my-details {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  gap: 15px;
+}
+
+.aboutcard1 {
+  display: flex;
+  align-items: center;
+  padding-right: 100px;
+  padding-left: 30px;
+  height: 50px;
+  color: white;
+  font-size: 25px;
+  border-radius: 20px;
+  background-color: #7c3aed;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.aboutcard1:hover {
+  transform: scale(1.08);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+.aboutcard2 {
+  display: flex;
+  align-items: center;
+  padding-right: 100px;
+  padding-left: 30px;
+  height: 50px;
+  color: white;
+  font-size: 25px;
+  border-radius: 20px;
+  background-color: #7c3aed;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.aboutcard2:hover {
+  transform: scale(1.08);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+.aboutcard3 {
+  display: flex;
+  align-items: center;
+  padding-right: 100px;
+  padding-left: 30px;
+  height: 50px;
+  color: white;
+  font-size: 25px;
+  border-radius: 20px;
+  background-color: #7c3aed;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.aboutcard3:hover {
+  transform: scale(1.08);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+.project {
+  background-color: #e0e7ff;
+}
+
+.project h2 {
+  font-size: 50px;
+  text-align: center;
+  padding-top: 2%;
+}
+
+.proj {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding-bottom: 5%;
+}
+
+.card {
+  width: 250px;
+  background: #0f172a;
+  color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.08);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+  width: 100%;
+}
+
+.card h3 {
+  padding: 10px;
+}
+
+.card a {
+  color: white;
+  text-decoration: none;
+}
+
+.tag {
+  padding: 10px;
+}
+
+.tag span {
+  color: black;
+  background: #e0e7ff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.contact{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.contact h2{
+  font-size: 50;
+}
+
+.contact p{
+  font-size: 25px;
+  line-height: .1;
+}
+
+.contact-form {
+
+    width: 500px;
+    background-color:#0f172a;
+    padding: 50Px;
+    color: white;
+    border-radius: 20Px;
+    align-self: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    padding: 20px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.btns button {
+    width: 100%;
+    padding: 10px;
+    background-color: #7c3aed;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+
+.btns{
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+.footbar {
+  background-color: #0f172a;
+  color: azure;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 10px 20px;
+}
+
+.hfoot{
+  margin: 0;
+  padding: 0;
+}
+
+.footbar p {
+  color: white;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.footbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: stretch;
+}
+
+.footbar ul li {
+  display: flex;
+  font-size: 25;
+}
+
+.footbar ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+  height: 80px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.footbar ul li a:hover {
+  background-color: #7c3aed;
+  transform: scale(1.08);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
