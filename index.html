@@ -136,5 +136,49 @@
         <li><a href="#contact">Contact Me</a></li>
       </ul>
     </div>
+    <script>
+document.querySelector(".contact-form").addEventListener("submit", function(e) {
+
+    let name = document.getElementById("name").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let contact = document.getElementById("Contact").value.trim();
+    let subject = document.getElementById("Subject").value.trim();
+    let message = document.getElementById("massage").value.trim();
+
+    let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    let contactPattern = /^[0-9]{10}$/;
+
+    if (name === "") {
+        alert("Name is required");
+        e.preventDefault();
+        return;
+    }
+
+    if (email === "" || !emailPattern.test(email)) {
+        alert("Valid email is required");
+        e.preventDefault();
+        return;
+    }
+
+    if (contact === "" || !contactPattern.test(contact)) {
+        alert("Valid 10-digit contact number is required");
+        e.preventDefault();
+        return;
+    }
+
+    if (subject === "") {
+        alert("Subject is required");
+        e.preventDefault();
+        return;
+    }
+
+    if (message === "") {
+        alert("Message is required");
+        e.preventDefault();
+        return;
+    }
+
+});
+</script>
   </body>
 </html>
